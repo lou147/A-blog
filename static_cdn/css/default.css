@@ -1,0 +1,32 @@
+body{
+	margin-bottom: 50px;
+}
+
+.box {
+	border: 1px red dotted;
+}
+
+.container {
+	max-width: 1100px
+}
+
+
+img.small{
+	height: 30px
+}
+
+.comment-reply{
+    display: none;
+}
+
+.navbar-default {
+    margin-bottom:40px;
+}
+
+.datetime {
+    color:#707070;
+}
+
+.lead {
+    margin-top:30px;
+}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block login %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/detail.css' %}">
+
+<div class="container categories-container">
+  <h1>{{cate}}</h1>
+    <hr>
+<div class="posts">
+    {% for post in post_list %}
+        <div class="media">
+        <header>
+        <a class="link" href="{% url 'detail' slug=post.slug %}"><h2 class="media-heading">{{post.title}}</h2></a>
+        </header>
+        <footer><h6 class="datetime">{{post.publish|date:'Y-m-d'}}</h6></footer>
+        <HR>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{%load static %}
+{% block content%}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/detail.css' %}">
+<link href='//cdn.webfont.youziku.com/webfonts/nomal/92525/19479/57f1bfa3f629d81494afb9d6.css' rel='stylesheet' type='text/css' />
+
+<div class="col-md-12 article_list">
+    {% for post in post_list %}
+    <div class="media">
+        <header>
+        <a class="link" href="{% url 'detail' slug=post.slug %}"><h2 class="media-heading">{{post.title}}</h2></a>
+        </header>
+        <footer>
+            <h6 class="datetime">{{post.publish|date:'Y-m-d'}}
+                <a href="{% url 'categories_detail' cate=post.category %}" class="detail-cate">
+                     | In {{post.category}} |
+                </a>
+            </h6>
+        </footer>
+        <p class="post-content">
+            {{post.content|safe|truncatechars_html:85}}
+        </p>
+        <HR>
+    </div>
+    {% endfor %}
+    <nav>
+      <ul class="pager">
+          {% if post_list.has_previous %}
+        <li><a href="?page={{ post_list.previous_page_number }}">Previous</a></li>
+          {% else %}
+        <li class="disabled"><a href="">Previous</a></li>
+          {% endif %}
+          {% if post_list.has_next %}
+        <li><a href="?page={{ post_list.next_page_number }}">Next</a></li>
+          {% else %}
+        <li class="disabled"><a href="">Next</a></li>
+          {% endif %}
+      </ul>
+    </nav>
+</div>
+
+{% endblock%}
+

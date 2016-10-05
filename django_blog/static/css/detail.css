@@ -1,0 +1,66 @@
+
+.link{color:#484848;}
+.link:hover { color: black; }
+
+.row footer {
+	margin-bottom: 10px;
+	color: #000;
+}
+
+.box {
+	border: 1px red dotted;
+}
+
+a:hover {
+    text-decoration:none;
+}
+
+.media {
+    margin-bottom:40px;
+}
+
+
+.post-content {
+    margin-bottom: 25px;
+}
+
+.detail-cate {
+    color: #484848;
+}
+
+.detail-footer {
+    margin-top: 15px;
+}
+
+.art-next {
+    color:#484848;
+    float:right;
+}
+.art-previous {
+    font-size:14px;
+    color:#484848;
+    float:left;
+}
+
+#uyan_frame {
+    margin-top:100px;
+}
+
+.post-content {
+    color:#303030;
+    font-family: Helvetica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑",  STXihei, "华文细黑",SimSun, "宋体",  Heiti, "黑体", sans-serif;
+    font-size: 17px;
+}
+
+
+.post-title {
+    font-weight:500;
+    font-family: Helvetica, Tahoma, Arial,SimSun, "宋体", sans-serif;
+}
+
+.media-heading {
+    font-weight:500;
+    font-size:25px;
+    font-family: Helvetica, Tahoma, Arial,"Microsoft YaHei", "微软雅黑", sans-serif;
+}
+

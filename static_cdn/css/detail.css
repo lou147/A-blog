@@ -1,0 +1,39 @@
+header h2 {
+	margin-bottom: 0px;
+
+}
+
+.link{color:#484848;}
+.link:hover { color: black; }
+
+
+
+.row footer {
+	margin-bottom: 10px;
+	color: #000;
+}
+
+.lead {
+	margin-bottom: 5px;
+}
+
+.box {
+	border: 1px red dotted;
+}
+
+article h2 {
+    color:black;
+    font-size:28px;
+}
+a:hover {
+    text-decoration:none;
+}
+
+.lead {
+    color:#282828;
+    font-size:15px;
+}
+
+.page-header {
+    font-weight:800;
+}
